@@ -21,7 +21,7 @@
             options: {
                 type: Array,
                 default: () => []
-            }
+            },
         },
         methods: {
             changeOption(event) {
