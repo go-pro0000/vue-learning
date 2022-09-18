@@ -5,7 +5,7 @@
             :key="pageNumber"
             class="page"
             :class="{
-                'current-page' : page === pageNumber
+                'current-page' : modelValue === pageNumber
             }"
             @click="changePage(pageNumber)"
         >{{ pageNumber }}
@@ -26,7 +26,6 @@
         },
         methods: {
             changePage(pageNumber) {
-                console.log(pageNumber);
                 this.$emit('update:modelValue', pageNumber);
             }
         }
